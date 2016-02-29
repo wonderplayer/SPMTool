@@ -61,6 +61,12 @@
   <ItemGroup>
     <Build Include="Lists.sql" />
     <Build Include="ListItems.sql" />
+    <Build Include="Fields.sql" />
+    <Build Include="ContentTypes.sql" />
+    <Build Include="FieldDataTypes.sql" />
+    <Build Include="ListItemContent.sql" />
+    <Build Include="ListContentTypes.sql" />
+    <Build Include="List.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="MigrationToolDatabase.refactorlog" />
