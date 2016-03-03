@@ -84,3 +84,4 @@ c:\users\rolands\documents\visual studio 2015\Projects\SharePointMigrationTool\S
 c:\users\rolands\documents\visual studio 2015\Projects\SharePointMigrationTool\SharePointMigrationTool\obj\Debug\SharePointMigrationTool.csproj.GenerateResource.Cache
 c:\users\rolands\documents\visual studio 2015\Projects\SharePointMigrationTool\SharePointMigrationTool\obj\Debug\SharePointMigrationTool.exe
 c:\users\rolands\documents\visual studio 2015\Projects\SharePointMigrationTool\SharePointMigrationTool\obj\Debug\SharePointMigrationTool.pdb
+D:\VisualStudio2015\Projects\SPMTool\SharePointMigrationTool\bin\Debug\SharePointMigrationTool.exe.config

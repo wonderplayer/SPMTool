@@ -1,5 +1,0 @@
-﻿CREATE TABLE [dbo].[FieldDataType]
-(
-	[Id] TINYINT NOT NULL PRIMARY KEY, 
-    [DataType] NVARCHAR(50) NOT NULL
-)
