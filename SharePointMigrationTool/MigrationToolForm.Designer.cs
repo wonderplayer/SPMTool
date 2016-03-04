@@ -51,6 +51,7 @@
             this.cbLists = new System.Windows.Forms.ComboBox();
             this.lblAviableLists = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.gbFrom.SuspendLayout();
             this.gbTo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listGridView)).BeginInit();
@@ -277,11 +278,22 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "label1";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(676, 182);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 36);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "View database list";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MigrationToolForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 515);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblAviableLists);
             this.Controls.Add(this.cbLists);
@@ -328,6 +340,7 @@
         private System.Windows.Forms.TextBox tbToList;
         private System.Windows.Forms.Label lblAviableLists;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

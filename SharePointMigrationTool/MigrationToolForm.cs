@@ -4,6 +4,7 @@ using System.Linq;
 using Microsoft.SharePoint.Client;
 using SharePointMigrationTool.MyClasses;
 using Form = System.Windows.Forms.Form;
+using Microsoft.SharePoint;
 
 namespace SharePointMigrationTool
 {
@@ -99,9 +100,13 @@ namespace SharePointMigrationTool
                 cbLists.Items.Add(list.Title);
             }
             cbLists.Text = cbLists.Items[0].ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             var connection = new DatabaseServices.Service1Client();
             var data = connection.GetLists();
-            label1.Text = data[0].Id.ToString();
+            label1.Text = data[0].Name;
         }
     }
 }

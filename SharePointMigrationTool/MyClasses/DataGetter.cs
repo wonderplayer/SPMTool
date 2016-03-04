@@ -6,7 +6,6 @@ namespace SharePointMigrationTool.MyClasses
 {
     public class DataGetter
     {
-
         public void LoadListToDataSet(ClientContext context, string title, DataSet dataSet)
         {
             Web web = context.Web;
@@ -28,27 +27,9 @@ namespace SharePointMigrationTool.MyClasses
             {
                 TableName = title + "ContentTypes"
             };
-            AddColumnsForContentTypeTable(dataContentTypeTable);
             AddColumns(fieldCollection, dataTable);
             FillColumns(items, dataTable);
             dataSet.Tables.Add(dataTable);
-            
-        }
-
-        private void AddColumnsForContentTypeTable(DataTable table)
-        {
-            var dataColumn = new DataColumn
-            {
-                Caption = "Field name",
-                ColumnName = "FieldName"
-            };
-            table.Columns.Add(dataColumn);
-            var dataColumn2 = new DataColumn
-            {
-                Caption = "Data type",
-                ColumnName = "DataType"
-            };
-            table.Columns.Add(dataColumn2);
         }
 
         public void AddColumns(FieldCollection fieldCollection, DataTable dataTable)
@@ -71,6 +52,7 @@ namespace SharePointMigrationTool.MyClasses
         {
             foreach (ListItem listItem in items)
             {
+                
                 DataRow dr = dataTable.NewRow();
                 InsertDataInRow(dr, listItem, dataTable);
                 dataTable.Rows.Add(dr);
