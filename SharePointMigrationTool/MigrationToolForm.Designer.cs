@@ -91,7 +91,7 @@
             this.tbToUsername.Name = "tbToUsername";
             this.tbToUsername.Size = new System.Drawing.Size(185, 20);
             this.tbToUsername.TabIndex = 9;
-            this.tbToUsername.Text = "rolands";
+            this.tbToUsername.Text = "Administrator";
             // 
             // tbToPassword
             // 
@@ -116,7 +116,7 @@
             this.tbToSiteUrl.Name = "tbToSiteUrl";
             this.tbToSiteUrl.Size = new System.Drawing.Size(301, 20);
             this.tbToSiteUrl.TabIndex = 14;
-            this.tbToSiteUrl.Text = "http://sp1";
+            this.tbToSiteUrl.Text = "http://win-43im0qh4j61/sites/devteam";
             // 
             // gbFrom
             // 
@@ -148,7 +148,7 @@
             this.tbFromSiteUrl.Name = "tbFromSiteUrl";
             this.tbFromSiteUrl.Size = new System.Drawing.Size(319, 20);
             this.tbFromSiteUrl.TabIndex = 13;
-            this.tbFromSiteUrl.Text = "http://sp1/sites/teamdev";
+            this.tbFromSiteUrl.Text = "http://win-43im0qh4j61/sites/teamdev";
             // 
             // lblFromUsername
             // 
@@ -173,7 +173,7 @@
             this.tbFromUsername.Name = "tbFromUsername";
             this.tbFromUsername.Size = new System.Drawing.Size(185, 20);
             this.tbFromUsername.TabIndex = 7;
-            this.tbFromUsername.Text = "rolands";
+            this.tbFromUsername.Text = "Administrator";
             // 
             // lblFromPassword
             // 

@@ -38,6 +38,8 @@
     <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,6 +62,11 @@
     <Compile Include="MyClasses\DataGetter.cs" />
     <Compile Include="MyClasses\DataSetter.cs" />
     <Compile Include="MyClasses\Credentials.cs" />
+    <Compile Include="Service References\DatabaseServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MigrationToolForm.resx">
       <DependentUpon>MigrationToolForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -82,12 +89,43 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Service References\DatabaseServices\Service1.wsdl" />
+    <None Include="Service References\DatabaseServices\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DatabaseServices\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DatabaseServices\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DatabaseServices\SharePointMigrationTool.DatabaseServices.ListInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\DatabaseServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DatabaseServices\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DatabaseServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DatabaseServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DatabaseServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

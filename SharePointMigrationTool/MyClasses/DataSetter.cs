@@ -27,7 +27,7 @@ namespace SharePointMigrationTool.MyClasses
             {
                 if (!fields.Any(f => f.InternalName == column.ColumnName))
                 {
-                    string fieldSchema = "<Field Type='Note' DisplayName='" + column.Caption + "'" +
+                    string fieldSchema = "<Field Type='Text' DisplayName='" + column.Caption + "'" +
                                          " RichText='TRUE' RichTextMode='FullHtml'" +
                                          " StaticName ='" + column.ColumnName + "' IsolateStyles='TRUE' />";
                     fieldSchemas.Add(fieldSchema);
@@ -73,7 +73,7 @@ namespace SharePointMigrationTool.MyClasses
             foreach (DataColumn column in dataTable.Columns)
             {
                 item[column.ColumnName] = row[column.ColumnName];
-            }
+            }         
         }
     }
 }

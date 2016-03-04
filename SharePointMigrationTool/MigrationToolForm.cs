@@ -79,6 +79,7 @@ namespace SharePointMigrationTool
                 listGridView.DataSource = dataTable;
                 dataGetter.SetColumnNamesForReadability(listGridView, dataTable);
             }
+            
         }
 
         private void btGetLists_Click(object sender, EventArgs e)
@@ -98,7 +99,9 @@ namespace SharePointMigrationTool
                 cbLists.Items.Add(list.Title);
             }
             cbLists.Text = cbLists.Items[0].ToString();
-
+            var connection = new DatabaseServices.Service1Client();
+            var data = connection.GetLists();
+            label1.Text = data[0].Id.ToString();
         }
     }
 }
